@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>HTML Elemen Form</title>
+	</head>
+	<body>
+		<form action="">
+			<!-- Elemen fieldset -->
+			<fieldset>
+				<!-- Elemen legend: caption dari elemen fieldset -->
+				<legend>Personalia:</legend>
+
+				<!-- Elemen label -->
+				<label for="username">Username:</label><br />
+
+				<!-- Elemen input-->
+				<input type="text" name="username" id="username" /><br /><br />
+
+				<!-- Elemen teks area -->
+				<textarea name="address" id="address" rows="10" cols="30">
+Nasri, RT 02 / RW 06, Giring, Paliyan, Gunungkidul, Daerah Istimewa Yogyakarta, Kode pos: 55871</textarea
+				><br />
+
+				<textarea
+					name="experince"
+					id="experience"
+					style="width: 256px; height: 100px"
+				>
+Saya adalah lulusan S1 Ilmu Komputer dengan predikat cum laude</textarea
+				><br />
+
+				<!-- Elemen buttoon -->
+				<button type="button" onclick="alert('Hello World')">Click Me</button
+				><br />
+
+				<!-- Elemen select -->
+				<label for="fruits">Choose a fruit:</label>
+				<select name="fruits" id="fruits">
+					<option value="apple">Apple</option>
+					<option value="orange" selected>Orange</option>
+					<option value="pineapple">Pineapple</option>
+					<option value="banana">Banana</option>
+				</select><br>
+
+                <!-- Elemen datalist -->
+                <input list="browsers">
+                <datalist id="browsers">
+                    <option value="Edge">
+                    <option value="Firefox">
+                    <option value="Chrome">
+                    <option value="Opera">
+                    <option value="Safari">
+                </datalist>
+			</fieldset>
+		</form>
+	</body>
+</html>
