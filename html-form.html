@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>HTML Form</title>
+	</head>
+	<body>
+		<!-- Input tipe teks -->
+		<form>
+			<label for="fname">Nama depan:</label><br />
+			<input
+				type="text"
+				name="text"
+				id="fname"
+				placeholder="Your firstname"
+			/><br />
+			<label for="lname">Nama belakang:</label><br />
+			<input
+				type="text"
+				name="text"
+				id="lname"
+				placeholder="Your lastname"
+			/><br /><br />
+
+			<!-- Input tipe reset -->
+			<input type="reset" value="Reset" />
+
+			<!-- Submit button -->
+			<input type="submit" value="Submit" />
+		</form>
+
+		<!-- Input tipe password -->
+		<form>
+			<label for="username">Username:</label><br />
+			<input type="text" name="username" id="username" /><br />
+			<label for="password">Password:</label><br />
+			<input type="password" name="password" id="password" />
+		</form>
+
+		<!-- Radio buttons -->
+		<p>Pilih ekspresi Anda</p>
+		<form>
+			<input type="radio" name="ekspresi" id="senang" />
+			<label for="senang">Senang</label><br />
+			<input type="radio" name="ekspresi" id="biasa" />
+			<label for="biasa">Biasa</label><br />
+			<input type="radio" name="ekspresi" id="sedih" />
+			<label for="sedih">Sedih</label><br />
+		</form>
+
+		<!-- Checkboxes -->
+		<p>Pilih hobi Anda</p>
+		<form>
+			<input type="checkbox" name="hobi" id="berenang" />
+			<label for="berenang">Berenang</label><br />
+			<input type="checkbox" name="hobi" id="menulis" />
+			<label for="menulis">Menulis</label><br />
+			<input type="checkbox" name="hobi" id="membaca" />
+			<label for="membaca">Membaca</label>
+		</form>
+
+		<!-- Input tipe button -->
+		<input type="button" value="Click me" onclick="alert('Hello')" />
+
+		<!-- Input tipe color -->
+		<form>
+			<label for="favcolor">Pilih warna kesukaanmu</label>
+			<input type="color" name="favcolor" id="favcolor" />
+		</form>
+
+		<!-- Input tipe date -->
+		<form>
+			<label for="birthday">Ulang tahun:</label>
+			<input type="date" name="birthday" id="birthday" />
+		</form>
+
+		<!-- Input datetime-local -->
+		<form>
+			<label for="birthdaytime">Birthday (date and time):</label>
+			<input type="datetime-local" name="date-time-local" id="birthdaytime" />
+		</form>
+
+		<!-- Input tipe email -->
+		<form>
+			<label for="email">Enter your email:</label>
+			<input type="email" name="email" id="email" />
+		</form>
+
+		<!-- Input tipe image -->
+		<form>
+			<input type="image" src="/Lambang UGM.png" alt="submit" width="50" />
+		</form>
+
+		<!-- Input tipe file -->
+		<form>
+			<label for="file">Selecta file:</label>
+			<input type="file" name="file" id="file" />
+		</form>
+
+		<!-- Input tipe hidden -->
+		<form>
+			<label for="fname">First name:</label>
+			<input type="text" id="fname" name="fname" /><br /><br />
+			<input type="hidden" name="custId" id="custId" value="3487" />
+			<input type="submit" value="SUbmit" />
+		</form>
+
+		<!-- INput tipe month -->
+		<form>
+			<label for="bdaymonth">Birthday (Month and Year):</label>
+			<input type="month" name="bdaymonth" id="bdaymonth" />
+		</form>
+		
+		<!-- Input tipe number -->
+		<form>
+			<label for="quantity">Quantity (between 1 and 3):</label>
+			<input type="number" name="quantity" id="quantity" min="1" max="3"><br>
+			<label for="quantity2">Quantity (between 0 and 100 with step 10):</label>
+			<input type="number" name="quantity2" id="quantity2" min="0" max="100" step="10">
+		</form>
+
+		<!-- Input tipe range -->
+		<form>
+			<label for="vol">Volume (between 0 and 50):</label>
+			<input type="range" name="vol" id="vol" min="0" max="50">
+		</form>
+
+		<!-- Input tipe search -->
+		<form>
+			<label for="gsearch">Search Google:</label>
+			<input type="search" name="gsearch" id="gsearch">
+		</form>
+
+		<!-- Input tipe tel (nomor telepon) -->
+		<form>
+			<label for="phone">Enter your phone:</label>
+			<input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}">
+		</form>
+
+		<!-- Input tipe time -->
+		<form>
+			<label for="appt">Select a time:</label>
+			<input type="time" name="appt" id="appt">
+		</form>
+
+		<!-- Input tipe URL -->
+		<form>
+			<label for="homepage">Add your homepage:</label>
+			<input type="url" name="homepage" id="homepage">
+		</form>
+
+		<!-- Input tipe week -->
+		<form>
+			<label for="week">Select a week:</label>
+			<input type="week" name="week" id="week">
+		</form>
+</html>
